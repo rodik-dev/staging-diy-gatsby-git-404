@@ -13,7 +13,8 @@
             {
                 "label": "Features",
                 "url": "/features",
-                "style": "link"
+                "style": "link",
+                "new_window": true
             },
             {
                 "label": "Pricing",
