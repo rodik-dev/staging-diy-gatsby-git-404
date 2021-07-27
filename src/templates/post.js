@@ -56,9 +56,7 @@ export default class Post extends React.Component {
             	</div>
             	<div className="container container--medium">
             		<div className="post__body text-block">
-                    {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-            					<p className="post__subtitle">{_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
-            				)}
+                        some element
             			{htmlToReact(_.get(this.props, 'pageContext.html', null))}
             		</div>
             		{_.get(this.props, 'pageContext.frontmatter.tags', null) && (
