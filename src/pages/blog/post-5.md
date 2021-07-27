@@ -54,5 +54,16 @@ Sem et tortor consequat id porta. Diam sit amet nisl suscipit adipiscing bibendu
 Tincidunt tortor aliquam nulla facilisi cras. Id semper risus in hendrerit. Magna fermentum iaculis eu non. At consectetur lorem donec massa sapien faucibus et. Est placerat in egestas erat imperdiet sed euismod nisi porta. Lacus vel facilisis volutpat est velit egestas dui. Sapien pellentesque habitant morbi tristique senectus et. Ut tellus elementum sagittis vitae et. Et malesuada fames ac turpis. Volutpat commodo sed egestas egestas. Praesent tristique magna sit amet purus gravida quis. Turpis egestas pretium aenean pharetra.
 
 
+```json
+{
+    // ...
+    "scripts": {
+        "build": "eleventy",
+        "clean": "rm -rf _site",
+        "dev": "eleventy --serve --port 8000"
+    }
+}
+```
+
 
 CODE
