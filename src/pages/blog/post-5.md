@@ -47,6 +47,8 @@ seo:
       relativeUrl: true
 template: post
 ---
+asdf
+
 You've gone through the design process in building a website, but now you're left with a handful of HTML files, along with some images and one or more CSS and JavaScript files, and you want to know what to do with them? Great! Let's talk about it.
 
 You *could* deploy (i.e. publish) them, and eventually you will, otherwise no one will see your site. But deploying at this point is only going to get you so far. Inevitably, you’re going to want to change something with the site, and then what? Are you going to go all the way through the design process again? That sounds … *painful.*
