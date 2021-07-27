@@ -16,18 +16,11 @@ export default function htmlToReact(html) {
                 if (!_.isEmpty(node.children)) {
                     return (
                         <ScriptTag key={index} {...node.attribs}>
-                            {convertChildren(node.children, index)}
+                            {_.map(node.children, (childNode) => convertNodeToElement(childNode, index, _.noop()))}
                         </ScriptTag>
                     );
                 } else {
-                    return <ScriptTag key={index} {...node.attribs}/>;
-                }
-            } else if (node.type === 'tag' && node.name === 'a') {
-                const href = node.attribs.href;
-                const props = _.omit(node.attribs, 'href');
-                // use Link only if there are no custom attributes like style, class, and what's not that might break react
-                if (_.isEmpty(props)) {
-                    return <Link key={index} to={href} {...props}>{convertChildren(node.children, index)}</Link>;
+                    return <ScriptTag key={index} {...node.attribs} />;
                 }
             }
         }
